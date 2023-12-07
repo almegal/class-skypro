@@ -1,6 +1,7 @@
 public class App {
    public static void main(String[] args) {
         Author tolstoi = new Author("Лев", "Толстой");
+       Author tolya = new Author("Лев", "Толстой");
         Author pushkin = new Author("Сашка","Пушкин");
 
         Book book1 = new Book(1867, tolstoi, "Война и Мир");
@@ -14,8 +15,10 @@ public class App {
        System.out.println("book2.getDataPublished() = " + book2.getDataPublished());
        System.out.println("book2.getAuthor() = " + book2.getAuthor());
 
-       book1.setDataPublished(2023);
        System.out.println("book1.getDataPublished() = " + book1.getDataPublished());
+       System.out.println("tolstoi = " + tolstoi);
+
+       System.out.println(book1);
    }
 
 }
